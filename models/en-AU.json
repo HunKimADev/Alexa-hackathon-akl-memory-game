@@ -1,0 +1,96 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "memory game",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "You can call me {name}",
+                        "My name is {name}",
+                        "{name}"
+                    ]
+                },
+                {
+                    "name": "CardIntent",
+                    "slots": [
+                        {
+                            "name": "cardNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Card number {cardNumber}",
+                        "Number {cardNumber}",
+                        "Card {cardNumber}",
+                        "I'll select {cardNumber}",
+                        "I'll go for {cardNumber}",
+                        "I will choose {cardNumber}",
+                        "{cardNumber}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ScoreIntent",
+                    "slots": [],
+                    "samples": [
+                        "check score",
+                        "score borad",
+                        "score",
+                        "show me score",
+                        "scores"
+                    ]
+                },
+                {
+                    "name": "FlipedIntent",
+                    "slots": [],
+                    "samples": [
+                        "revealed",
+                        "Check fliped cards",
+                        "Check revealed cards",
+                        "Check fliped card",
+                        "fliped",
+                        "Check fliped",
+                        "what are revealed",
+                        "What are fliped",
+                        "Which cards are fliped"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
