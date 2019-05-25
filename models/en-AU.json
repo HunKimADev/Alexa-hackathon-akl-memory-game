@@ -38,21 +38,21 @@
                     ]
                 },
                 {
-                    "name": "CardIntent",
+                    "name": "BoxIntent",
                     "slots": [
                         {
-                            "name": "cardNumber",
+                            "name": "boxNumber",
                             "type": "AMAZON.NUMBER"
                         }
                     ],
                     "samples": [
-                        "Card number {cardNumber}",
-                        "Number {cardNumber}",
-                        "Card {cardNumber}",
-                        "I'll select {cardNumber}",
-                        "I'll go for {cardNumber}",
-                        "I will choose {cardNumber}",
-                        "{cardNumber}"
+                        "{boxNumber}",
+                        "I will choose  {boxNumber}",
+                        "I'll go for {boxNumber}",
+                        "I'll select {boxNumber}",
+                        "box {boxNumber}",
+                        "box number {boxNumber}",
+                        "number {boxNumber}"
                     ]
                 },
                 {
@@ -75,7 +75,7 @@
                     ]
                 },
                 {
-                    "name": "FlipedIntent",
+                    "name": "RevealedIntent",
                     "slots": [],
                     "samples": [
                         "revealed",
@@ -87,6 +87,13 @@
                         "what are revealed",
                         "What are fliped",
                         "Which cards are fliped"
+                    ]
+                },
+                {
+                    "name": "ResetIntent",
+                    "slots": [],
+                    "samples": [
+                        "reset"
                     ]
                 }
             ],
