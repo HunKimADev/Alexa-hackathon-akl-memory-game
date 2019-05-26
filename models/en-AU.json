@@ -32,9 +32,11 @@
                         }
                     ],
                     "samples": [
+                        "I am {name}",
+                        "I'm {name}",
+                        "Call me {name}",
                         "You can call me {name}",
-                        "My name is {name}",
-                        "{name}"
+                        "My name is {name}"
                     ]
                 },
                 {
@@ -57,11 +59,25 @@
                 },
                 {
                     "name": "AMAZON.YesIntent",
-                    "samples": []
+                    "samples": [
+                        "kay",
+                        "k",
+                        "okay",
+                        "yes please",
+                        "yas",
+                        "yu",
+                        "yup",
+                        "yea"
+                    ]
                 },
                 {
                     "name": "AMAZON.NoIntent",
-                    "samples": []
+                    "samples": [
+                        "none",
+                        "nope",
+                        "noor",
+                        "nah"
+                    ]
                 },
                 {
                     "name": "ScoreIntent",
@@ -75,18 +91,14 @@
                     ]
                 },
                 {
-                    "name": "RevealedIntent",
+                    "name": "OpenedIntent",
                     "slots": [],
                     "samples": [
+                        "check opend",
+                        "check revealed box",
+                        "check opend box",
                         "revealed",
-                        "Check fliped cards",
-                        "Check revealed cards",
-                        "Check fliped card",
-                        "fliped",
-                        "Check fliped",
-                        "what are revealed",
-                        "What are fliped",
-                        "Which cards are fliped"
+                        "opened"
                     ]
                 },
                 {
@@ -94,6 +106,15 @@
                     "slots": [],
                     "samples": [
                         "reset"
+                    ]
+                },
+                {
+                    "name": "SkipIntent",
+                    "slots": [],
+                    "samples": [
+                        "skip it",
+                        "skip tutorial",
+                        "skip"
                     ]
                 }
             ],
