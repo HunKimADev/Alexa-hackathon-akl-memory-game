@@ -1,0 +1,372 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Frame",
+                "width": "100vw",
+                "height": "100vh",
+                "backgroundColor": "#55DDEE",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "justifyContent": "spaceAround",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "10vh",
+                                "direction": "row",
+                                "paddingLeft": "80vw",
+                                "items": [
+                                    {
+                                        "type": "TouchWrapper",
+                                        "width": "6vw",
+                                        "height": "9vh",
+                                        "item": {
+                                            "type": "Frame",
+                                            "width": "6vw",
+                                            "height": "9vh",
+                                            "borderColor": "white",
+                                            "borderWidth": "2px",
+                                            "borderRadius": "45vw",
+                                            "item": [
+                                                {
+                                                    "type": "Text",
+                                                    "text": "?",
+                                                    "color": "white",
+                                                    "width": "6vw",
+                                                    "height": "9vh",
+                                                    "textAlign": "center",
+                                                    "textAlignVertical": "center",
+                                                    "fontSize": "7vh",
+                                                    "fontWeight": "100"
+                                                }
+                                            ]
+                                        },
+                                        "onPress": {
+                                            "type": "SendEvent",
+                                            "arguments": [
+                                                "HelpIntent"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "text": "",
+                                        "width": "2vw",
+                                        "height": "10vh"
+                                    },
+                                    {
+                                        "type": "TouchWrapper",
+                                        "width": "6vw",
+                                        "height": "9vh",
+                                        "item": {
+                                            "type": "Frame",
+                                            "width": "6vw",
+                                            "height": "9vh",
+                                            "borderColor": "white",
+                                            "borderWidth": "2px",
+                                            "borderRadius": "45vw",
+                                            "item": [
+                                                {
+                                                    "type": "Text",
+                                                    "text": "<",
+                                                    "color": "white",
+                                                    "width": "6vw",
+                                                    "height": "9vh",
+                                                    "textAlign": "center",
+                                                    "textAlignVertical": "center",
+                                                    "fontSize": "7vh",
+                                                    "fontWeight": "100"
+                                                }
+                                            ]
+                                        },
+                                        "onPress": {
+                                            "type": "SendEvent",
+                                            "arguments": [
+                                                "BackIntent"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "20vh",
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "text": "Sound Select",
+                                        "width": "100vw",
+                                        "fontWeight": "800",
+                                        "fontSize": "16vh",
+                                        "top": "1vh",
+                                        "color": "white",
+                                        "textAlign": "center"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "60vh",
+                                "direction": "row",
+                                "alignItems": "center",
+                                "justifyContent": "spaceAround",
+                                "items": [
+                                    {
+                                        "type": "Sequence",
+                                        "scrollDirection": "horizontal",
+                                        "height": "60%",
+                                        "width": "100%",
+                                        "numbered": true,
+                                        "item": [
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Animals",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Animals"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Undefined1",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Undefined1"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Undefined2",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Undefined2"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Undefined3",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Undefined3"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Undefined4",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Undefined4"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "text": "",
+                                            "width": "2vw",
+                                            "height": "10vh"
+                                        },
+                                        {
+                                            "type": "TouchWrapper",
+                                            "width": "20vw",
+                                            "height": "30vh",
+                                            "item": {
+                                                "type": "Frame",
+                                                "width": "20vw",
+                                                "height": "30vh",
+                                                "borderColor": "white",
+                                                "borderWidth": "3px",
+                                                "borderRadius": "2vw",
+                                                "item": [
+                                                    {
+                                                        "type": "Text",
+                                                        "text": "Undefined5",
+                                                        "color": "white",
+                                                        "width": "20vw",
+                                                        "height": "30vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center",
+                                                        "fontSize": "7vh",
+                                                        "fontWeight": "100"
+                                                    }
+                                                ]
+                                            },
+                                            "onPress": {
+                                                "type": "SendEvent",
+                                                "arguments": [
+                                                    "Undefined5"
+                                                ]
+                                            }
+                                        }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
